@@ -1,0 +1,14 @@
+Public Class Form1
+    Private Sub btnGrade_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnGrade.Click
+        Dim dblQuarter1, dblQuarter2, dblFinalExam As Double
+
+        dblQuarter1 = txtQ1Grade.Text 'Collecting grade data
+        dblQuarter2 = txtQ2Grade.Text
+        dblFinalExam = txtFEGrade.Text
+
+        Dim dblGrade As Double
+        dblGrade = (dblQuarter1 * 0.4) + (dblQuarter2 * 0.4) + (dblFinalExam * 0.2)
+        Me.lblGrades.Text = dblGrade
+        MessageBox.Show("Have a great day!")
+    End Sub
+End Class
